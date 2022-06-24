@@ -1,0 +1,197 @@
+#blogrolls {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  .title {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title_background {
+      width: 100%;
+      height: 100%;
+      background-image: url("https://get.wallhere.com/photo/car-1494607.jpg");
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 0 0 15px 15px;
+      z-index: 0;
+    }
+    .title_text {
+      font-size: 40px;
+      color: #fff;
+      position: relative;
+      z-index: 3;
+    }
+  }
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .container {
+    @media (max-width: 870px) {
+      padding: 0 2%;
+    }
+    .statement {
+      .remark {
+        background: #cccccc;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 10px;
+      }
+      .meInfo {
+        background: skyblue;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 10px;
+      }
+      .waring {
+        background: #ffea97;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 10px;
+      }
+    }
+    .commentList {
+      margin: 15px 0;
+      .more-btn {
+        margin: 40px 0;
+        display: flex;
+        justify-content: center;
+        button {
+          padding: 13px 35px;
+          border: 2px solid #d6d6d6;
+          border-radius: 50px;
+          color: #adadad;
+          cursor: pointer;
+          background: none;
+          &:hover {
+            box-shadow: 0 0 4px rgb(255 204 0 / 85%);
+            border: 2px solid #ffe066;
+            color: #ffe066;
+          }
+        }
+      }
+      .commentList_title {
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+    .comment {
+      margin: 15px 0 0;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      .ant-input {
+        border-radius: 10px;
+      }
+      button {
+        margin: 15px auto;
+        padding: 10px 50px;
+        background: none;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: color 0.5s, border 0.5s;
+        &:hover {
+          border: 1px solid deepskyblue;
+          color: deepskyblue;
+        }
+      }
+    }
+  }
+  .list {
+    width: 100%;
+    .item {
+      width: 100%;
+      margin: 30px 0px 0;
+      h3 {
+        padding-left: 10px;
+        border-left: 3px solid var(--primary);
+        margin: 15px 0;
+      }
+      .ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .li:nth-child(3n) {
+          margin-right: 0;
+        }
+        .li {
+          width: 32%;
+          padding: 15px;
+          margin: 0% 1% 1% 0;
+          position: relative;
+          overflow: hidden;
+          border-radius: 10px;
+          transition: all 0.3s;
+          border: 1px solid #222;
+          @media (max-width: 870px) {
+            width: 49%;
+          }
+          @media (max-width: 600px) {
+            width: 100%;
+          }
+          &:hover {
+            &:before {
+              width: 180%;
+            }
+            img {
+              transform: rotate(360deg);
+            }
+          }
+          &:before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.5);
+            -webkit-transform: skew(45deg, 0);
+            transform: skew(45deg, 0);
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -60px;
+            z-index: -1;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+          }
+          a {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            .blogname {
+              width: 100%;
+              font-size: 20px;
+              color: #2222;
+              text-align: center;
+              padding-bottom: 10px;
+              border-bottom: 1px dashed #505050;
+            }
+            .description {
+              margin: 15px 0;
+              width: 100%;
+              font-size: 14px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              text-align: center;
+              color: #222;
+            }
+            img {
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              margin: 10px 0;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

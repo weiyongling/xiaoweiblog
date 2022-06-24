@@ -1,0 +1,35 @@
+.ant-layout-sider-children {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  .ant-layout-sider {
+    background: #fff;
+  }
+  .anticon {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #f0f0f0;
+  }
+}
+@media (max-width: 750px) {
+  .adminSlide {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    height: 100vh;
+    transform: translate(-200px, 0px);
+    transition: transform 0.5s ease;
+    .anticon {
+      display: none;
+    }
+  }
+  .adminSlide_active {
+    transform: translate(0px, 0px);
+  }
+}

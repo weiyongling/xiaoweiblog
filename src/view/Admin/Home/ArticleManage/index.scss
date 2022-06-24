@@ -1,0 +1,14 @@
+.table {
+  overflow-x: hidden;
+  .search {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    .searchInput {
+      width: 200px;
+    }
+    button {
+      margin-left: 10px;
+    }
+  }
+}

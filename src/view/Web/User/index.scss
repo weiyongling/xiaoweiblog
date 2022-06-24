@@ -1,0 +1,28 @@
+#user {
+  padding-top: 80px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  .user-region {
+    max-width: 70%;
+    margin: 30px auto 0px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    .left {
+      border: 1px solid #f0f0f0;
+      margin-right: 15px;
+      background: #fff;
+      .ant-menu {
+        border: none;
+        .ant-menu-item {
+          margin: 0;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+}

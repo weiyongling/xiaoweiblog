@@ -1,0 +1,31 @@
+.admin_login {
+  max-width: 400px;
+  width: 400px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  .admin_login_region {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    .title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      padding-bottom: 15px;
+    }
+    .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+#UserInfo {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    @media (max-width: 550px) {
+      flex-flow: wrap;
+      .label {
+        width: 100% !important;
+        margin: 10px 0;
+      }
+    }
+    .edit {
+      margin-left: 1rem;
+      text-decoration: underline;
+    }
+    input {
+      width: auto;
+    }
+    .desc {
+      color: #999;
+      margin-left: 15px;
+    }
+    .ant-avatar {
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+    }
+    .label {
+      width: 15%;
+    }
+  }
+}

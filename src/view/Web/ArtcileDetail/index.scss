@@ -1,0 +1,248 @@
+.markdown-body pre {
+  background: none !important;
+  div {
+    border-radius: 5px;
+  }
+}
+@keyframes hengxian {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.nothing {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+}
+#ArticleDetail {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  .region {
+    max-width: 820px;
+    margin: auto;
+  }
+
+  .userInfo {
+    width: 100%;
+    background-size: cover;
+    padding: 30px 0;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    .thumbnail {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0 0 15px 15px;
+      z-index: -1;
+      background-size: cover;
+    }
+    .userInfo-region {
+      max-width: 820px;
+      width: 820px;
+      display: block;
+      margin-left: auto;
+      padding: 0 15px;
+      margin-right: auto;
+      .title {
+        width: 100%;
+        padding: 15px 0 0;
+        color: #fff;
+        font-size: 32px;
+      }
+      .wire {
+        width: 100%;
+        margin: 10px 0;
+        height: 2px;
+        background: #fff;
+        display: block;
+        //animation: hengxian 1s linear;
+        //animation-delay: 2s;
+      }
+
+      .date {
+        width: 100%;
+        color: #999999;
+        padding: 15px 0 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .date-info {
+          margin-left: 10px;
+          display: flex;
+          color: #fff;
+          font-weight: 300;
+          font-size: 14px;
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .markdown-body {
+    background: none !important;
+  }
+  .text {
+    margin: 30px 0;
+  }
+  .reward {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    span {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 50%;
+      background: skyblue;
+      color: #fff;
+    }
+  }
+  .replayInfo {
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    font-size: 1.17rem;
+    button {
+      padding: 5px 10px;
+      background: #f4f6f8;
+      border-radius: 5px;
+      border: none;
+      font-size: 12px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+  }
+  .commentList {
+    margin: 15px 0;
+    .more-btn {
+      margin: 40px 0;
+      display: flex;
+      justify-content: center;
+      button {
+        padding: 13px 35px;
+        border: 2px solid #d6d6d6;
+        border-radius: 50px;
+        color: #adadad;
+        cursor: pointer;
+        background: none;
+        &:hover {
+          box-shadow: 0 0 4px rgb(255 204 0 / 85%);
+          border: 2px solid #ffe066;
+          color: #ffe066;
+        }
+      }
+    }
+    .commentList_title {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+  .comment {
+    margin: 15px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    .ant-input {
+      border-radius: 10px;
+    }
+    button {
+      margin: 15px auto;
+      padding: 10px 50px;
+      background: none;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: color 0.5s, border 0.5s;
+      &:hover {
+        border: 1px solid deepskyblue;
+        color: deepskyblue;
+      }
+    }
+  }
+  .page {
+    width: 100%;
+    margin: 30px 0 0;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    .pages:nth-child(2) {
+      align-items: flex-end;
+    }
+    .pages:only-child {
+      width: 100%;
+    }
+    .pages {
+      width: 50%;
+      padding: 50px 40px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-flow: column;
+      z-index: 9;
+      &:hover {
+        .zzc {
+          opacity: 0;
+        }
+      }
+      .zzc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        transition: opacity 0.5s;
+      }
+      img {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -2;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .page_title {
+        font-size: 18px;
+        margin-top: 5px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    flex-flow: wrap;
+    .pages {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .region {
+    width: 100% !important;
+  }
+}
